@@ -1,0 +1,214 @@
+.linked-list-operations {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .visualization {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    margin-top: 20px;
+  }
+  
+  .node-container {
+    display: flex;
+    align-items: center;
+    margin: 0px; /* Add margin to space nodes */
+  }
+  
+  .data-section {
+    flex: 1; /* Allow this section to grow */
+    text-align: center; /* Center text */
+    padding: auto;
+  }
+  
+  .link-section {
+    flex: 0 0 auto; /* Prevent this section from growing */
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .arrow2 {
+    width: 20px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add space between the node and the arrow */
+  }
+  .arrow1{
+    width: 50px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add space between the node and the arrow */
+  }
+  .arrow2 img {
+    width: 40px; /* Adjust the width of the arrow image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0px; 
+  }
+  
+  
+  .link-indicator {
+    flex-basis: calc(100% / var(--node-count)); /* Match size with the node */
+    padding: 10px; /* Same padding as node */
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    margin: 0; /* Add margin for spacing */
+    font-size: calc(300% / var(--node-count)); /* Dynamic font size based on viewport width */
+    background-color: rgb(72, 64, 51); /* Light background for visibility */
+    display: flex; /* Center content in the link indicator */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .node {
+    flex-basis: calc(100% / var(--node-count)); /* Divide width based on node count */
+    padding: 10px; /* Set padding for the node */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px; /* Add margin to space nodes */
+    font-size: calc(300% / var(--node-count)); /* Dynamic font size based on viewport width */
+    display: flex; /* Center content in the node */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .horizontal-scroll {
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    display: flex; /* Align children in a row */
+    justify-content: center; /* Center children horizontally */
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .box {
+    padding: 15px;
+    border: 2px solid gray;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .box-active {
+    border-color: blue;
+  }
+  
+  .node-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .node-link {
+    display: inline-block; /* Ensure the arrow is inline */
+    margin-left: 5px; /* Space between node and arrow */
+  }
+  
+  .node-link img {
+    margin-top: 10px;
+  }
+  
+  .list-structure {
+    margin: 20px 0;
+  }
+  
+  
+  .rotate {
+    display: inline-block; /* Allow transformation effects */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+  }
+  
+  .rotate:hover {
+    transform: rotate(180deg); /* Rotate 180 degrees on hover */
+  }
+  
+  .visualization .node-container:first-of-type .arrow {
+    margin: 0; /* Remove all margins from the first arrow */
+    padding: 0; /* Remove padding if present */
+    width: 0px; /* Reduce arrow size if needed */
+  }
+  
+
+  .code-container {
+    position: fixed;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ccc;
+    transition: right 0.5s ease;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  
+  .code-container.visible {
+    right: 0;
+  }
+  
+  .code-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .code-header h5 {
+    margin: 0;
+  }
+  
+  .code-header button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .code-header button:hover {
+    background-color: #c82333;
+  }
+  
+  .code-content {
+    padding: 15px;
+  }
+  
+  .code-section {
+    margin-bottom: 20px;
+  }
+  
+  .code-section h5 {
+    margin-bottom: 10px;
+    color: #151616;
+    text-align: left;
+  }
+  
+
+  pre {
+    background-color: #151616;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px; /* Space between description and code */
+    flex-basis: 40%; /* Set a fixed width for the code */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+  
+  pre {
+    background-color: #151616;
+    padding: 10px;  /* Padding inside the pre element */
+    border-radius: 5px;
+    overflow-x: auto;  /* Allow horizontal scrolling if needed */
+    white-space:pre;  /* Preserve whitespace and line breaks */
+    text-align:left;  /* Align text to the left */
+    font-family: monospace;  /* Use a monospace font for code */
+}
+
+.visualization1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  margin-top: 20px;
+}
+.node-container1 {
+  display: flex;
+  align-items: center;
+  margin: 0px; /* Add margin to space nodes */
+}
